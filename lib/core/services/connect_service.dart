@@ -4,8 +4,8 @@ import 'dart:developer';
 
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:lightuptech/core/utils/environments.dart';
 
+import '../constants/environments.dart';
 import 'connectivity_service.dart';
 
 class ConnectService extends GetConnect {

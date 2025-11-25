@@ -9,9 +9,9 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 import 'app/routes/app_pages.dart';
+import 'core/constants/logger.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/theme_service.dart';
-import 'core/utils/logger.dart';
 import 'main_bindings.dart';
 
 void main() async {

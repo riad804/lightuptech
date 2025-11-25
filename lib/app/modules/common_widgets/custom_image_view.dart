@@ -6,7 +6,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:lottie/lottie.dart';
 
-
 extension ImageTypeExtension on String {
   ImageType get imageType {
     final lower = toLowerCase();
@@ -61,10 +60,7 @@ class CustomImageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return alignment != null
-        ? Align(
-      alignment: alignment!,
-      child: _buildWidget(),
-    )
+        ? Align(alignment: alignment!, child: _buildWidget())
         : _buildWidget();
   }
 
@@ -72,10 +68,7 @@ class CustomImageView extends StatelessWidget {
     return Padding(
       key: key,
       padding: margin ?? EdgeInsets.zero,
-      child: InkWell(
-        onTap: onTap,
-        child: _buildCircleImage(),
-      ),
+      child: InkWell(onTap: onTap, child: _buildCircleImage()),
     );
   }
 
@@ -93,10 +86,7 @@ class CustomImageView extends StatelessWidget {
   _buildImageWithBorder() {
     if (border != null) {
       return Container(
-        decoration: BoxDecoration(
-          border: border,
-          borderRadius: radius,
-        ),
+        decoration: BoxDecoration(border: border, borderRadius: radius),
         child: _buildImageView(),
       );
     } else {
@@ -119,7 +109,9 @@ class CustomImageView extends StatelessWidget {
               fit: fit ?? BoxFit.contain,
               colorFilter: color != null
                   ? ColorFilter.mode(
-                  color ?? Colors.transparent, BlendMode.srcIn)
+                      color ?? Colors.transparent,
+                      BlendMode.srcIn,
+                    )
                   : null,
             ),
           );
@@ -147,9 +139,12 @@ class CustomImageView extends StatelessWidget {
               ),
             ),
             errorWidget: (context, url, error) => Container(
-                color: Colors.white,
-                child: Image.asset("assets/images/placeholder_image.png",
-                    fit: BoxFit.cover)),
+              color: Colors.white,
+              child: Image.asset(
+                "assets/images/placeholder_image.png",
+                fit: BoxFit.cover,
+              ),
+            ),
           );
         case ImageType.lottie:
           return Lottie.asset(
@@ -170,9 +165,12 @@ class CustomImageView extends StatelessWidget {
             color: color,
             errorBuilder: (context, error, stackTrace) {
               return Container(
-                  color: Colors.white,
-                  child: Image.asset("assets/images/placeholder_image.png",
-                      fit: BoxFit.cover));
+                color: Colors.white,
+                child: Image.asset(
+                  "assets/images/placeholder_image.png",
+                  fit: BoxFit.cover,
+                ),
+              );
             },
           );
       }

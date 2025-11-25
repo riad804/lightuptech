@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
-import '../../../data/user/user_repository.dart';
+import '../../../../data/user/user_repository.dart';
+
 
 class HomeController extends GetxController {
   final UserRepository _repository;

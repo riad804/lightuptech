@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../../data/user/user_repository.dart';
+import '../../../../data/user/user_repository.dart';
 import '../controllers/home_controller.dart';
 
 class HomeBinding extends Bindings {

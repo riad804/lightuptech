@@ -20,6 +20,7 @@ class AppTheme {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: primary,
       primary: primary,
+      secondary: secondary,
       onPrimary: primaryText,
       brightness: brightness,
       surface: scaffoldBg,
@@ -97,7 +98,7 @@ class AppTheme {
             fontWeight: FontWeight.w600,
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(50),
           ),
         ),
       ),
@@ -110,7 +111,7 @@ class AppTheme {
             fontWeight: FontWeight.w600,
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(50),
           ),
         ),
       ),
@@ -130,7 +131,7 @@ class AppTheme {
           padding: const EdgeInsets.symmetric(vertical: 16),
           side: BorderSide(color: colorScheme.primary),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(50),
           ),
         ),
       ),
