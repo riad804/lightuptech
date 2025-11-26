@@ -15,7 +15,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.ONBOARD,
-      page: () => OnboardView(),
+      page: () => const OnboardView(),
       binding: OnboardBinding(),
     ),
     GetPage(

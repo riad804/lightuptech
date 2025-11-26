@@ -2,10 +2,16 @@
 class Assets {
   Assets._();
 
-  static const String constantsAppImages = 'lib/core/constants/app_images.dart';
-  static const String fontsAppIcons = 'assets/fonts/AppIcons.ttf';
+  static const String fontsAppIcons = 'assets/fonts/app-icons.ttf';
+  static const String fontsTypoldBold = 'assets/fonts/typold-bold.otf';
+  static const String fontsTypoldExtendedExtraBold = 'assets/fonts/typold-extended-extra-bold.otf';
+  static const String fontsTypoldExtraBold = 'assets/fonts/typold-extra-bold.otf';
+  static const String fontsTypoldMedium = 'assets/fonts/typold-medium.otf';
+  static const String fontsTypoldRegular = 'assets/fonts/typold-regular.otf';
+  static const String fontsTypoldThin = 'assets/fonts/typold-thin.otf';
   static const String imagesAppIconPrimary = 'assets/images/app_icon_primary.png';
   static const String imagesAppIconSecondary = 'assets/images/app_icon_secondary.png';
+  static const String imagesAppTextLogo = 'assets/images/app_text_logo.png';
   static const String imagesBagOfFruits = 'assets/images/bag_of_fruits.png';
   static const String imagesCarrot = 'assets/images/carrot.png';
   static const String imagesChilli = 'assets/images/chilli.png';
@@ -16,5 +22,4 @@ class Assets {
   static const String imagesOnion = 'assets/images/onion.png';
   static const String imagesReverseTree = 'assets/images/reverse_tree.png';
   static const String lightuptechApp = 'app.env';
-
 }

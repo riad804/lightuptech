@@ -76,6 +76,7 @@ class AppIcons {
   static const IconData delete = IconData(0xe81c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData telephone = IconData(0xe81d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData stock_down = IconData(0xe81e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData email = IconData(0xe81f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData user = IconData(0xe82a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData search = IconData(0xf002, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData eye = IconData(0xf06e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
