@@ -43,6 +43,7 @@ flutter:
     - app.env
     - assets/fonts/
     - assets/images/
+    - assets/icons/
 
   fonts:
     - family: Typold

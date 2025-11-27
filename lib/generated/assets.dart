@@ -20,6 +20,9 @@ class Assets {
   static const String imagesLeaves = 'assets/images/leaves.png';
   static const String imagesOnboard = 'assets/images/onboard.png';
   static const String imagesOnion = 'assets/images/onion.png';
+  static const String imagesPlaceHolderImg = 'assets/images/place_holder_img.png';
   static const String imagesReverseTree = 'assets/images/reverse_tree.png';
   static const String lightuptechApp = 'app.env';
+  static const String svgCheckBox = 'assets/icons/check_box.svg';
+
 }

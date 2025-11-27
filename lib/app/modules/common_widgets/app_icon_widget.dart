@@ -23,7 +23,7 @@ class AppIconWidget extends StatelessWidget {
           height: 80.h,
           width: 80.h,
         ),
-        context.v24,
+        context.v12,
         Text(title, style: context.textTheme.headlineSmall, textAlign: TextAlign.center),
         context.v8,
         Text(caption, style: context.textTheme.bodyMedium, textAlign: TextAlign.center),

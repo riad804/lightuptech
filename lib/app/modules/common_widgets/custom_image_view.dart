@@ -141,7 +141,7 @@ class CustomImageView extends StatelessWidget {
             errorWidget: (context, url, error) => Container(
               color: Colors.white,
               child: Image.asset(
-                "assets/images/placeholder_image.png",
+                "assets/images/place_holder_img.png",
                 fit: BoxFit.cover,
               ),
             ),

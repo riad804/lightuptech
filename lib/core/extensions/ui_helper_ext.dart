@@ -27,6 +27,7 @@ extension UiHelperExt on BuildContext {
   Widget get v12 => SizedBox(height: 12.h);
   Widget get v16 => SizedBox(height: 16.h);
   Widget get v24 => SizedBox(height: 24.h);
+  Widget get v32 => SizedBox(height: 32.h);
 
   // -----------------------------
   // 🔹 Padding helpers

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:lightuptech/core/extensions/ui_helper_ext.dart';
 import 'package:lightuptech/core/theme/app_theme.dart';
@@ -11,7 +12,7 @@ class TextInputField extends StatelessWidget {
     this.controller,
     this.icon,
     this.validator,
-    this.isOnDialog = false,
+    this.isOnDialog = false, this.iconSize,
   });
 
   final String label;
@@ -20,6 +21,7 @@ class TextInputField extends StatelessWidget {
   final IconData? icon;
   final String Function(String?)? validator;
   final bool isOnDialog;
+  final double? iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,7 @@ class TextInputField extends StatelessWidget {
         TextFormField(
           controller: controller,
           decoration: InputDecoration(
-            prefixIcon: icon != null ? Icon(icon) : null,
+            prefixIcon: icon != null ? Icon(icon, size: iconSize ?? 18.r,) : null,
             hintText: hint,
             fillColor: isOnDialog ? context.colors.secondaryContainer : context.colors.surfaceContainer,
           ),
