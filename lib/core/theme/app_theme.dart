@@ -184,10 +184,19 @@ class AppTheme {
       navigationBarTheme: NavigationBarThemeData(
         elevation: 0,
         indicatorColor: colorScheme.primaryContainer,
-        labelTextStyle: MaterialStatePropertyAll(
-          TextStyle(
-              fontFamily: TextFontTheme.fontFamily,fontSize: 12.sp, fontWeight: FontWeight.w600),
+        labelTextStyle: WidgetStatePropertyAll(
+          TextStyle(fontFamily: TextFontTheme.fontFamily,fontSize: 12.sp, fontWeight: FontWeight.w600),
         ),
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        elevation: 10,
+        backgroundColor: colorScheme.surfaceContainer,
+        selectedItemColor: colorScheme.primary.withValues(),
+        unselectedItemColor: Colors.black54,
+        selectedIconTheme: IconThemeData(size: 28),
+        unselectedIconTheme: IconThemeData(size: 24),
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
       ),
     );
   }

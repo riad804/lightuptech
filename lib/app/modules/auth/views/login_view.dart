@@ -80,7 +80,12 @@ class LoginView extends GetView<LoginController> {
                             ),
                           ),
                           context.v24,
-                          SecondaryButton(onTap: () {}, text: "Login"),
+                          SecondaryButton(
+                            onTap: () {
+                              Get.offNamed(Routes.PATIENT_MAIN);
+                            },
+                            text: "Login",
+                          ),
                         ],
                       ),
                     ),
